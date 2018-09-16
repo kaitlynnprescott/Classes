@@ -1,0 +1,26 @@
+/************************************************************************************
+ * Name        : main.css
+ * Author      : Kaitlynn Prescott
+ * Date        : Apr 27, 2017
+ * Description : CS-564 Lab 10: Fix All The Things
+ * Pledge      : I pledge my honor that I have abided by the Stevens honor system.
+ ************************************************************************************/
+
+body {
+    padding-top: 50px;
+}
+
+.hints {
+    color: #5C5C5C;
+}
+
+.the-result {
+    background: #666;
+    color: #000;
+}
+
+.alert-success {
+    font-size: 150%;
+    font-family: "Courier New";
+    width: 150%;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "description": "For this lab, you will be using HTML, CSS, and JavaScript on the user's browser to make a simple palindrome checker!",
+  "main": "app.js",
+  "scripts": {
+    "seed": "node ./tasks/seed.js",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katie Prescott",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "hbs": "^4.0.1",
+    "mongodb": "^2.2.25",
+    "node-uuid": "^1.4.8"
+  }
+}

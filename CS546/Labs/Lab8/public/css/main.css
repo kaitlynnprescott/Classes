@@ -1,0 +1,85 @@
+/************************************************************************************
+ * Name        : main.css
+ * Author      : Kaitlynn Prescott
+ * Date        : Apr 4, 2017
+ * Description : CS-564 Lab 8: Palindromes
+ * Pledge      : I pledge my honor that I have abided by the Stevens honor system.
+ ************************************************************************************/
+
+body {
+    background: #E4E4E4;
+    font-family: Calibri, sans-serif;
+    font-size: 15pt;
+}
+
+main {
+    max-width: 75%;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+h1 {
+    margin-top: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #AFAFAF;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-control {
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: #AFAFAF;
+}
+
+
+p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.btn {
+    background-color: #555555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.bottom p {
+    font-size: 1rem;
+    max-width: 75%;
+    margin: auto;
+}
+
+.is-palindrome {
+    color: blue;
+    background-color: #CACACA;
+    border-color: #A1A1A1;
+    list-style-type: none;
+}
+
+.not-palindrome {
+    color: red;
+    background-color: #CACACA;
+    border-color: #A1A1A1;
+    list-style-type: none;
+
+}
+
+.resultlist {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}

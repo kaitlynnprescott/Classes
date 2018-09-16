@@ -1,0 +1,15 @@
+{
+  "name": "dogswithblogs",
+  "version": "1.0.0",
+  "description": "Lecture 4: dogs with blogs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katie Prescott",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.22"
+  }
+}

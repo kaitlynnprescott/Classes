@@ -1,0 +1,20 @@
+{
+  "name": "lab10",
+  "version": "1.0.0",
+  "description": "fixing all the things",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katie Prescott",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.6",
+    "mongodb": "^2.2.26",
+    "node-uuid": "^1.4.8"
+  }
+}
