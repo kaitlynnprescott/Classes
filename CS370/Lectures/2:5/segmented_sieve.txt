@@ -1,0 +1,29 @@
+[a,b] = [29,40]
+
+// low-primes:
+	[2 3 4 5 6]
+	// run standard sieve => start with 2^2 and take out multiples of 2:
+		[2 3 5]
+
+// high-primes:
+	 29 30 31 32 33 34 35 36 37 38 39 40
+	 [T  T  T  T  T  T  T  T  T  T  T  T]
+	  0  1  2  3  4  5  6  7  8  9  10 11
+
+	 p<-2
+	 i = ceiling of (29/2) * 2 - 29 => 30-29 = 1
+	 29 30 31 32 33 34 35 36 37 38 39 40
+	 [T  x  T  x  T  x  T  x  T  x  T  x]
+	  0  1  2  3  4  5  6  7  8  9  10 11
+
+	  p<-3
+	  i = ceiling (29/3) * 3 - 29 => 30-29=1
+	  29 30 31 32 33 34 35 36 37 38 39 40
+	 [T  x  T  x  x  x  T  x  T  x  x  x]
+	  0  1  2  3  4  5  6  7  8  9  10 11
+
+	  p<-5
+	  i = ceiling (29/5) *5 - 29 => 30-29 = 1
+	  29 30 31 32 33 34 35 36 37 38 39 40
+	 [T  x  T  x  x  x  x  x  T  x  x  x]
+	  0  1  2  3  4  5  6  7  8  9  10 11

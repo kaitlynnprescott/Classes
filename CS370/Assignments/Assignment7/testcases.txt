@@ -1,0 +1,163 @@
+Test Cases:
+
+// test case 1
+abcabcaalmoaba
+acbacbamlaobb
+// output
+ababaaob
+ababalab
+ababalob
+ababamab
+ababamob
+abacaaob
+abacalab
+abacalob
+abacamab
+abacamob
+abcbaaob
+abcbalab
+abcbalob
+abcbamab
+abcbamob
+acabaaob
+acabalab
+acabalob
+acabamab
+acabamob
+acacaaob
+acacalab
+acacalob
+acacamab
+acacamob
+acbaalab
+acbaalob
+acbaamab
+acbaamob
+acbcaaob
+acbcalab
+acbcalob
+acbcamab
+acbcamob
+
+
+// test case 2
+abcabcaalmoabasadfasdfklcnsdfasdabcab
+acbacbamlaobbasdfassfasdbcbbbvzccabc
+// output
+ababaaobasdfassfasdbcab
+ababalabasdfassfasdbcab
+ababalobasdfassfasdbcab
+ababamabasdfassfasdbcab
+ababamobasdfassfasdbcab
+abacaaobasdfassfasdbcab
+abacalabasdfassfasdbcab
+abacalobasdfassfasdbcab
+abacamabasdfassfasdbcab
+abacamobasdfassfasdbcab
+abcbaaobasdfassfasdbcab
+abcbalabasdfassfasdbcab
+abcbalobasdfassfasdbcab
+abcbamabasdfassfasdbcab
+abcbamobasdfassfasdbcab
+acabaaobasdfassfasdbcab
+acabalabasdfassfasdbcab
+acabalobasdfassfasdbcab
+acabamabasdfassfasdbcab
+acabamobasdfassfasdbcab
+acacaaobasdfassfasdbcab
+acacalabasdfassfasdbcab
+acacalobasdfassfasdbcab
+acacamabasdfassfasdbcab
+acacamobasdfassfasdbcab
+acbaalabasdfassfasdbcab
+acbaalobasdfassfasdbcab
+acbaamabasdfassfasdbcab
+acbaamobasdfassfasdbcab
+acbcaaobasdfassfasdbcab
+acbcalabasdfassfasdbcab
+acbcalobasdfassfasdbcab
+acbcamabasdfassfasdbcab
+acbcamobasdfassfasdbcab
+
+
+// test case 3
+abcabbassisatdfassfasdbcbbbvzccabcbcaalmoabasadfasdfklcnsdfasdabcab
+acbacbbbng12klcnsdklcnsdklcnsd3tesng123teszsdfklcnsdfasdabcabccabcamlao
+// output
+acbacbbbcccsdsdfklcnsdfasdabcab
+acbacbbbcclsdsdfklcnsdfasdabcab
+
+
+// test case 4
+afdczalabsamrbhkxdyjaovxbvfevsvltuhmdhcrketxbtvknnqryjsqoycqpcqyscumgurpqvhpohtg
+vueqdkshbuyrasxoqknkqukfashsduzhshtncphaagcwcesmcccyzyqytnjpdrlohanozjvkuwosejtc
+// output
+dsbyaofshdhtncpccmqpoht
+dsbyaofshdhtncpcscqpoht
+dsbyaofshdhtncpcsmqpoht
+dsbyaofsuhhtncpccmqpoht
+dsbyaofsuhhtncpcscqpoht
+dsbyaofsuhhtncpcsmqpoht
+dsbyaxfshdhtncpccmqpoht
+dsbyaxfshdhtncpcscqpoht
+dsbyaxfshdhtncpcsmqpoht
+dsbyaxfsuhhtncpccmqpoht
+dsbyaxfsuhhtncpcscqpoht
+dsbyaxfsuhhtncpcsmqpoht
+dshyaofshdhtncpccmqpoht
+dshyaofshdhtncpcscqpoht
+dshyaofshdhtncpcsmqpoht
+dshyaofsuhhtncpccmqpoht
+dshyaofsuhhtncpcscqpoht
+dshyaofsuhhtncpcsmqpoht
+dshyaxfshdhtncpccmqpoht
+dshyaxfshdhtncpcscqpoht
+dshyaxfshdhtncpcsmqpoht
+dshyaxfsuhhtncpccmqpoht
+dshyaxfsuhhtncpcscqpoht
+dshyaxfsuhhtncpcsmqpoht
+
+
+// test case 5
+beginning-middle-ending
+beginning-diddle-dum-ending
+// output
+beginning-iddle-ending
+
+
+// test case 6
+thisisatest
+testing123testing
+// output
+tsitest
+
+
+// test case 7
+abcdefghijklmnopqrstuvwxyz
+zyxwvytsrqponmlkjihgfedcba
+// output
+vy
+wy
+xy
+
+
+// test case 8
+jdheurifjdhsvkskelkhadsbilhas
+dheknejsiwkjrhgfujenrfjasklhjadsfas
+// output
+dheurfjsklhadsas
+
+
+// test case 9
+abcabcaalmoabasadfasdfklcnsdfasdabcab
+acbacbamlaobbasdfassfasdbcbbbvzccabc
+// output
+alaaacal
+bcalaaaa
+
+
+// test case 10
+dkjhflkgmj
+vbnmdf
+// output
+df

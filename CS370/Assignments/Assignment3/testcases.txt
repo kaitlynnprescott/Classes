@@ -1,0 +1,530 @@
+// Test Case 1:
+30
+add cat
+add catatonic
+add category
+add categorize
+add catastrophe
+add catastrophic
+add catholic
+add showers
+add showcase
+add showdown
+add shower
+add showbiz
+add showing
+add shown
+add dog
+add dogmatic
+add doggone
+add dogwood
+add doggery
+add doge
+add dogear
+find cat 
+find cata
+find cath
+find show
+find shown
+find showe
+find dog
+find doge
+find dogg
+
+Output:
+7
+3
+1
+7
+1
+2
+7
+2
+2
+
+// Test Case 2:
+11
+add s
+add ss
+add sss
+add ssss
+add sssss
+find s
+find ss
+find sss
+find ssss
+find sssss
+find ssssss
+
+Output:
+5
+4
+3
+2
+1
+
+// Test Case 3:
+50
+add sgsnpdrasneijfyboekjb
+add skrexdjucryzddmsqvlba
+add ssokjogpbepjcbhqnygwe
+add shinanedchfpafdaxbtth
+add shprxfpudjrhejzrgvjuv
+add suwsasetitzflcdyoqlbc
+add sdzwvsvlejyuhtblzydts
+add sadwysvzvfjddsgllhpjp
+add sxbanmgillnduwgvddtef
+add sngpgnhenpvygkoeqfhui
+add swbqyiheryvtkobwzjqae
+add spmsvuspfhljbubjmeyaj
+add swagutqvdptyssvcbrtds
+add sxpgafmtwfbglivlmggqw
+add svonlxhemqbfopuzdovda
+add sbnkpxgpvcawdoxgjpsru
+add stqjhmshejkuaofdmqhsr
+add sepnxnotazkztqwwgblmw
+add slzebmvbxtpavufclonjo
+add swkpvbkuyfntbjmkklujk
+add sjpvacyymptjjbzsafhba
+add sbzceqhckyacgospuamgg
+add sjvmrrpirfhkdqouktwkp
+add sjjqoyzefxjbdrnsmbtbz
+add sesoiltdfgnrzoyimunqn
+add snhjhfnmofyrvqkmmqbxb
+add sbydkwzcwmylparpcqlwf
+add sxilckixilmvqesmrzkpx
+add spsediburmjwjesaewtps
+add sdtuyrdppiwmpyeitudvq
+add ssyjprblbsckfcrpgulsk
+add sckayaprepcmsvrbyxdkl
+add scgubqoopaxfkpbsfudvb
+add spryiorjlxdbenbyccvpj
+add sfjqygunaftezayjqmdbl
+add stlsrxntaqwrwwltpmnmq
+add sqyhdtjrhzsuqftrczzaz
+add shiqngavgrqqlsdibbjiz
+add sdqkcukhmdojcvojfjkux
+add sslvhbacagretsdgnkocc
+add sddgylmxgerwminbqxikd
+find a
+find sw
+find s
+find ss
+find shin
+find st
+find sc
+find sd
+find hello
+find se
+
+Output:
+0
+3
+41
+3
+1
+2
+2
+4
+0
+
+// Test Case 4:
+20
+add tear
+add deny
+add joint
+add era
+add tax
+add pudding
+add grief
+add matter
+add protect
+add master
+add expolsion
+add rage
+add pick
+add taxi
+add trolley
+find t
+find ta
+find e
+find p
+find m
+
+Output:
+4
+2
+2
+3
+2
+
+// Test Case 5:
+35
+add gain
+add housewife
+add lonely
+add cell
+add yard
+add lawyer
+add headline
+add global
+add lie
+add zebra
+add grind
+add lourde
+add year
+add xylaphone
+add gradual
+add color
+add harsh
+add zero
+add hilarious
+add graduate
+add hook
+add comedy
+add young
+add comedian
+find grad
+find com
+find z
+find h
+find co
+find y
+find lo
+find ha
+find law
+find head
+find g
+
+Output:
+2
+2
+2
+5
+3
+3
+2
+1
+1
+1
+5
+
+// Test Case 6:
+45
+add chris
+add calendar
+add campaign
+add convict
+add cigarette
+add conductor
+add clue
+add cash
+add comedy
+add meng
+add market
+add modern
+add modernize
+add max
+add maximum
+add marble
+add moving
+add merchant
+add minister
+add mouth
+add katie
+add kid
+add kin
+add kindergarten
+add kitchen
+add keys
+add knock
+add king
+add kinship
+add knot
+add knight
+add knit
+find k
+find kn
+find kin
+find ki
+find m
+find mi
+find ma
+find mo
+find co
+find ca
+find ch
+find kind
+find con
+
+Output:
+12
+4
+4
+6
+11
+1
+4
+4
+3
+3
+1
+1
+2
+
+// Test Case 7:
+60
+add abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+add shdbcumsndhckwenf
+add ajdjdnwuffkdjhsnr
+add alahadshsk
+add osaasdfjhaklsdh
+add ahkldsjfihlkhjg
+add hghghrjrbfjfhdjd
+add dhfsglkjfdghs
+add hdkhsdrglhkfd
+add nmjsfjgs
+add kjhdsgfasjhdfshh
+add liuhjkfsdhjsrhufsdg
+add hjsdfjsugjughjdsuhgi
+add lhksjfghdkfgshjkgghjk
+add sdfkljghdfgsdlgjhkd
+add fjkgdhdslhgdfjklshlgj
+add khjgfdllhkdlghkd
+add ghjuygfhjfjg
+add fghvjfdfghgjygk
+add ghjklugkhjkujku
+add fghjyfjhvmhbgkjbj
+add ghjkgvbjkghvbjkgjb
+add ghjuilkjliukli
+add ghjkjkliuygfhvjgfd
+add dfghfhvjjfhjk
+add fgdfgfdtfghjuygthjk
+add oiuyghjkiuygfh
+add oiuiytjrhtdfghjjuytjfd
+add hfgjuytrdgfhjk
+add ghjuilykghjouliyktjfghvjytyf
+add sdfghdtgchvjfhvjbh
+add bnvghkjbvcfgkjhbvg
+add rtedfgrdsfgtjygjh
+add jyfhgnhmvjbkuyigh
+add dfgcnhvftydrtgcfnhvgjbygku
+add gyukhiiygkjhb
+add dfghvnbcgfdtgyuhkj
+add tredfghjuyg
+add yturdhgfhyutfyjdrf
+add vcfdghjbvgfhjbvghj
+add iouytdfgcvbhjuyg
+add uiytrdfghjknbhvg
+add vcxdshtfyjghkl
+add ioghjfvjbkuytrhdfgcv
+add iuyfgthjbkuihygfyhvjb
+find g
+find ghj
+find l
+find n
+find d
+find hf
+find vc
+find iog
+find a
+find uiy
+find iuy
+find dfgh
+find jhg
+find fgh
+find tre
+
+Output:
+7
+6
+2
+1
+4
+1
+2
+1
+4
+1
+1
+2
+0
+2
+1
+
+// Test Case 8:
+54
+add dog
+add puppers
+add puffin
+add ugly
+add meatballs
+find p
+add sickly
+add cookie
+add grilled
+add cheese
+find d
+find ch
+add milk
+add bone
+find m
+add feo
+add kernel
+add belt
+add this
+add city
+add on
+add rock
+find b
+add and
+add roll
+find ro
+add watch
+add earring
+add sunshine
+find s
+add knot
+add supercalifragilisticexpialidocious
+find super
+add defenestrate
+add window
+add war
+find w
+add hello
+find c
+add world
+add tooth
+add jackass
+find ja
+add phone
+add glasses
+add eyelash
+add purple
+add duck
+add antidisestablishmentarianism
+find a
+find gl
+find pu
+find e
+find t
+
+Output:
+2
+1
+1
+2
+2
+2
+2
+1
+3
+3
+1
+2
+1
+3
+2
+2
+
+// Test Case 9:
+48
+add bulldog
+add germanshepherd
+add alaskanmalamute
+add pitbull
+add australiansheperd
+add australiancattledog
+add aussie
+add beagle
+add belgianmalinois
+add bernesemountaindog
+add bloodhound
+add bordercollie
+add boxer
+add cockerspaniel
+add cockapoo
+add chowchow
+add doberman
+add dutchshepherd
+add goldenretreiver
+add goldendoodle
+add greatdane
+add labradorretreiver
+add pointer
+add pug
+add shibainu
+add tibetanmastiff
+add welshspringerspaniel
+add corgi
+add yorkie
+add brittany
+add chihuahua
+add sharpei
+add dalmation
+add weinerdog
+add greyhound
+add irishsetter
+find g
+find w
+find c
+find d
+find i
+find cock
+find lab
+find p
+find y
+find aus
+find as
+find w
+
+Output:
+5
+2
+5
+3
+1
+2
+1
+3
+1
+3
+0
+2
+
+// Test Case 10:
+26
+add red
+add green
+add blue
+add purple
+add violet
+add salmon
+add amethyst
+add black
+add brown
+add burgundy
+add coral
+add gray
+add maroon
+add navy
+add orange
+add plum
+add pink
+add teal
+add white
+add yellow
+find b
+find m
+find o
+find p
+find s
+find a
+
+Output:
+4
+1
+1
+3
+1
+1

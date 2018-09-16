@@ -1,0 +1,3 @@
+The string you entered isn't pandigital
+Elapsed time: 0.515331 ms
+
