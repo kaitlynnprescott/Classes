@@ -1,0 +1,13 @@
+x=-10:.05:10;
+y1=MySineFunction(x);
+y2=MyCosineFunction(x);
+y3=MyTangentFunction(x);
+figure(1);
+plot(x,y1,'b');
+legend('Sine');
+figure(2);
+plot(x,y2,'g');
+legend('Cosine');
+figure(3);
+plot(x,y3,'r');
+legend('Tangent');
