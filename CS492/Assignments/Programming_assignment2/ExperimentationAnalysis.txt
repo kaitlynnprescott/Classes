@@ -1,0 +1,55 @@
+
+
+Experimenting:
+
+PrePaging:
+LRU: 
+	Page size:		Total Page Swaps:
+		1				103972
+		2				96374
+		4				94148
+		8				92945
+		16				102813
+
+FIFO:
+	Page size:		Total Page Swaps:
+		1				106533
+		2				102004
+		4				107567
+		8				120698
+		16				171487
+
+Clock:
+	Page size:		Total Page Swaps:
+		1				104076
+		2				96391
+		4				94681
+		8				94419
+		16				171487
+
+Demand Paging:
+LRU: 
+	Page size:		Total Page Swaps:
+		1				189438
+		2				140637
+		4				116581
+		8				104094
+		16				99207
+
+FIFO:
+	Page size:		Total Page Swaps:
+		1				190759
+		2				148927
+		4				128419
+		8				123269
+		16				133434
+
+Clock:
+	Page size:		Total Page Swaps:
+		1				189473
+		2				140689
+		4				116827
+		8				105927
+		16				115515
+
+

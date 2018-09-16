@@ -1,0 +1,6 @@
+I pledge my honor that I have abided by the Stevens Honor System.
+Catherine Javadian
+Kaitlynn Prescott 
+Brianne Trollo
+(1) To prevent a deadlock, we added a mutex to surround the philosopher's attempts to grab the forks so that one philosopher will be able to grab two forks at once before any other philosopher takes one and potentially causes a deadlock.
+(2) We used a condition variable to force the fifth philosopher who tries to start eating to wait. This allows the first four philosophers to grab a fork and for at least one philosopher to grab two forks and begin eating. Once the first philospher has finished eating, the waiting philosopher is signalled to continue.
