@@ -1,0 +1,1 @@
+struct s_node* head = NULL;

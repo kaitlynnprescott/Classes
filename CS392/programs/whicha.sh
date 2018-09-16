@@ -1,0 +1,10 @@
+#!/bin/sh
+execname="$1"
+dirs=`echo $PATH | tr ":" " "`
+for d in $dirs
+do
+	if [ -x "$d/$execname" ]
+	then
+		echo "$d/$execname"
+	fi
+done

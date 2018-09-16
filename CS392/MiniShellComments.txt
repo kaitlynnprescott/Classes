@@ -1,0 +1,13 @@
+Grade: 48 (100 pts possible)
+
+Comments:
+-1 for malloc, need to error check to make sure it worked 
+-1 for line 48, should error check since this could lead to 
+	segmentation fault 
+-10 for not handling EOF 
+-10 for not handling SIGCHLD 
+-10 for not handling SIGINT 
+-10 for not using execvp correctly, need to set the last one 
+	of arguments to NULL 
+-10 for exit, when exit is given, it should also kill all 
+	background processes
