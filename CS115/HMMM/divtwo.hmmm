@@ -1,0 +1,13 @@
+# divtwo.hmmm
+# computes the floor(x/y)
+0  read r1        # read dividend from user
+1  write r1       # echo the input
+2  read r2        # read divisor form the user
+3  write r2       # echo the input
+4  jeqz r2, 8     # jump to line 7 if trying to divide by 0
+5  div r3, r1, r2 # divide
+6  write r3       # print result
+7  halt
+8  setn r3, 0     # 0 is the result for divsion by 0 (fictitious)
+9  write r3       # print result
+10 halt

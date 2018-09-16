@@ -1,0 +1,28 @@
+from Shapes import *
+
+def main():
+    t = Triangle(50, 25)
+    r = Rectangle(100, 200)
+    s = Square(100)
+    c = Circle()
+    t.render()
+    t.rotate(45)
+    t.translate(-40, 50)
+*    t.scale(3)
+*    t.flip()
+    r.render()
+    r.rotate(45)
+    r.translate(100, 50)
+*    r.scale(3)
+*    r.flip()
+    s.render()
+    s.rotate(45)
+    s.translate(-50, -100)
+*    s.scale(3)
+*    s.flip()
+    c.render()
+    c.rotate(45)
+    c.translate(-100, -50)
+*    c.scale(3)
+*    c.flip()
+    

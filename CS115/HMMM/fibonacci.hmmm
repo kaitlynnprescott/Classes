@@ -1,0 +1,23 @@
+#fibonacci.hmmm
+#prints first n fibonacci numbers
+00	read r1					#get input
+01	jeqzn r1 17				#if r1 == 0, jump to line 17
+02	setn r5 0				#set r5 = 0
+03	write r5				#print r5
+04	addn r1 -1				#changing r1 to track how many numbers have been written
+05	jeqzn r1 17				#if r1 == 0, jumpt to line 17
+06 	setn r6 1				#set r6 = 1
+07	write r6				# print r6
+08	addn r1 -1				#changing r1 to track how many numbers have been written
+09	jeqzn r1 17				#if r1 == 0, jumpt to line 17
+10 	add r2 r5 r6			#set r2 = r5+r6
+11 	write r2				#print r2
+12	addn r1 -1				#changing r1 to track how many numbers have been written
+13	jeqzn r1 17				#if r1 == 0, jumpt to line 17
+14	mov r5 r6				#move r6 to r5
+15 	mov r6 r2				#move r2 to r6
+16 	jumpn 09				#start next iteration
+17	halt					#stop
+
+
+
