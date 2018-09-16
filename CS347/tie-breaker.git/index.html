@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>TieBreaker</title>
+  <meta charset="utf-8" />
+  <link rel=stylesheet type="text/css" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="media/tb.ico" type="image/vnd.microsoft.icon">
+  <script src="js.cookie.js"></script>
+  <!--Autocomplete stuff from https://jqueryui.com/autocomplete/-->
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <meta name="referrer" content="no-referrer">
+  <script>
+  //Google Analytics tracking code
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-76740306-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="tiebreaker.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="title" class="">
+      <a><img src="media/tiebreaker.svg" alt="tiebreaker" style="width:30px;" align="top">TieBreaker</a>
+    </header>
+      <section id="search-bar" class="no-movies">
+        <form name="search-bar-form" id="search-bar-form" method="get" onsubmit="return false;">
+          <input type="text" name="query" id="query" required="" title="You need to enter a movie!" placeholder="Enter a movie to compare!">
+        </form>
+      </section>
+      <article id="trailer">
+        <a href="#" class="trailer-close-a"><i class="material-icons" id="close">close</i></a>
+        <div class="trailer-iframe-div">
+        </div>
+      </article>
+      <section id="comparisons">
+        <article class="movie hidden-scrollbar" style="display:none;">
+          <input type="hidden" class="imdbid-hidden" />
+          <div class="info-div">
+            <a href="#" class="delete-a"><i class="material-icons" id="trash">delete</i></a>
+            <div class="movie-ratings">
+              <header>
+                <div class="winner">
+                  <img src="media/toppick.png" class="winner-img">
+                </div>
+                <div class="poster-div">Poster</div>
+              </header>
+              <div class="footer">
+                <table>
+                  <tr id="rt">
+                    <td id="rating-icon">
+                      <img src="media/rt.png" alt="Rotten Tomatoes" height="30" width="25">
+                    </td>
+                    <td id="rating-site">
+                      <p>Rotten Tomatoes</p>
+                    </td>
+                    <td id="rating-score">
+                      <span class="rt-score-span"></span>
+                    </td>
+                  </tr>
+                  <tr id="metac">
+                    <td id="rating-icon">
+                      <img src="media/mc.png" alt="Metacritic" height="30" width="30">
+                    </td>
+                    <td id="rating-site">
+                      <p>Metacritic</p>
+                    </td>
+                    <td id="rating-score">
+                      <span class="meta-score-span"></span>
+                    </td>
+                  </tr>
+                  <tr id="imdb">
+                    <td id="rating-icon">
+                      <img src="media/imdb.ico" alt="IMDb" height="30" width="30">
+                    </td>
+                    <td id="rating-site">
+                      <p>IMDb</p>
+                    </td>
+                    <td id="rating-score">
+                      <span class="imdb-score-span"></span>
+                    </td>
+                  </tr>
+                </table>
+                <p class="rating" id="rating-total">Average: <span class="total-score-span"></span>
+                </p>
+              </div>
+
+            </div>
+            <div class="description">
+                <p><span class="title-span">Movie Title</span>
+                (<span class="year-span">year</span>)</p>
+            </div>
+            <!--
+            <button type="button" id="more" style="vertical-align:middle"><span>More </span>
+            </button>
+            -->
+            <article class="more" onclick="show()">
+              <p><b>Awards: </b><span class="awards-span"></span></p>
+              <br>
+              <p><b>Description: </b><span class="description-span"></span></p>
+              <button class="trailer-button">Watch Trailer</button>
+              <section class="discussion">
+                <p>Discussions:</p>
+                <img src="media/loading.gif" class="discussion-loading-img">
+                <a class="reddit-a" target="_blank"><img src="media/reddit.png" alt="Reddit" height="50" width="50"></a>
+                <p class="spoiler">Warning: may contain spoilers!</p>
+              </section>
+            </article>
+          </div>
+          <div class="loading-div">
+            <div class="loading-div-inner">
+              <img src="media/371.gif" alt="Loading" id="load_icon"/>
+            </div>
+          </div>
+        </article>
+        <article id="add-movie">
+          <div id="add1">
+            <p>Add another movie!</p>
+            <i class="material-icons" id="add-movie-plus" style="font-size:1.5em;">add_circle_outline</i>
+          </div>
+        </article>
+      </section>
+      <footer>
+        <p>CS347 - Spring 2016</p>
+        <p>Brandon Rothweiler, James Murphy, Josh Gribbon, Katie Prescott</p>
+      </footer>
+    </div>
+  </body>
+</html>

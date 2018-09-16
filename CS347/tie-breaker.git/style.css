@@ -1,0 +1,407 @@
+/*
+Overall page stuff
+*/
+* {
+    margin:0;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    overflow-x: hidden;
+    width: 100%;
+}
+body {
+    background-color: #4a1a68;
+    text-align: center;
+}
+#title {
+    padding:20px;
+    color: white;
+    display: inline-block;
+    font-size: 30pt;
+}
+#title-alt{
+    padding:20px;
+    color: white;
+    display: inline-block;
+    font-size: 30pt;
+    border: solid 3px white;
+    border-radius: 18px;
+}
+#title a{
+  color: white;
+  text-decoration: none;
+}
+
+#wrapper>footer{
+    color:grey;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color:white;
+    padding: 10px;
+}
+
+.movie-ratings {
+  padding: 5px;
+  position: relative;
+  -webkit-columns: 125px 2;
+  -moz-columns: 125px 2;
+  -ms-columns: 125px 2;
+  -o-columns: 125px 2;
+  columns: 125px 2;
+
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  -ms-column-gap: 0px;
+  -o-column-gap: 0px;
+  column-gap: 0px;
+}
+
+.movie-ratings .footer {
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.description {
+    font-size: 1.25em;
+    display: inline-block;
+}
+
+#rating-total{
+    font-weight:bold;
+}
+
+/*
+Form stuff
+*/
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+
+/*
+Deprecated
+#wrapper{
+    margin: 0 auto -70px;
+}
+*/
+
+/*
+Comparison box stuff
+*/
+#comparisons {
+    height: 650px;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: #6D458F;
+    box-shadow: 1px 1px 5px;
+    margin: 0 0 80px;
+    /*Changed to show box later*/
+    display: none;
+}
+#comparisons>article {
+    position: relative;
+    box-shadow:1px 1px 5px;
+    height:100%;
+    width:calc(100%/5 - 15px);
+    overflow: auto;
+    display:inline-block;
+    margin: 5px;
+    border: 1px solid inherit;
+    border-radius: 4px;
+}
+.hidden{
+    display: none;
+    visibility:collapse;
+}
+
+#add-movie{
+    position: relative;
+    background-color: azure;
+    cursor: pointer;
+}
+#add1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    font-size: 2em;
+    color: gray;
+}
+
+#add1:hover {
+    color: #444444;
+}
+#add1:hover #add-movie-plus{
+    color: #444444;
+}
+
+#trash {
+    display: block;
+    visibility: hidden;
+    position: relative;
+    top: 5px;
+    text-align: right;
+}
+#trash:hover{
+    color: #444444;
+    cursor: pointer;
+}
+.material-icons{
+    color: darkgray;
+
+}
+
+.movie:hover #trash{
+    visibility: visible;
+}
+
+
+
+/*
+A class to move the form to the center of the page when no movies are in the comparison box. When a movie is added this class is removed and the form moves up to the top
+*/
+.no-movies form{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.no-movies{
+    height: 85vh;
+}
+
+
+
+
+#comparisons>article>header {
+    padding: 7px;
+}
+
+.description {
+    padding: 2px;
+}
+#comparisons>article>footer p {
+    padding: 2px;
+}
+
+
+.more {
+    padding: 5px;
+    display: block;
+}
+
+.spoiler {
+    color: red;
+    font-size: .8em;
+}
+
+/*
+  on click button, drop down everything under button
+    "article class "more" "
+
+*/
+
+
+/*
+Movie box stuff
+*/
+.movie {
+    background-color:azure;
+}
+.movie>header {
+    font-size: 1.2em;
+}
+.poster-image {
+  height: 175px;
+}
+.winner {
+    z-index: 1;
+    float:center;
+    position: absolute;
+    padding: 5px;
+    margin-top: -20px;
+    height: 20px;
+    margin-left:-37px;
+    display: none;
+}
+
+.movie-ratings>header {
+  height: 180px;
+  max-width: 120px;
+  overflow: hidden;
+  float:center;
+}
+
+
+
+.delete-a {
+  text-decoration: none;
+}
+.trailer-close-a {
+  text-decoration: none;
+}
+.rating{
+    font-size: 1.5em;
+}
+#rating-total{
+    font-weight:bold;
+}
+
+.trailer-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #4a1a68;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 120px;
+    margin: 10px;
+}
+
+.trailer-button :disabled{
+  color: gray;
+  cursor: none;
+}
+
+.trailer-p a{
+    color:white;
+    text-decoration:none;
+}
+
+#rating-score span{
+    font-weight:bold;
+    color: #4a1a68;
+}
+
+/*
+Autocomplete search
+*/
+.search-entry {
+  height: 80px;
+  text-align: left;
+}
+
+.search-poster {
+  height: 80px;
+  width: 55px;
+  max-width: 55px;
+  float:center;
+}
+
+.search-poster-div {
+  float: left;
+  overflow:hidden;
+}
+
+
+.info-div {
+  display:none;
+}
+
+.loading-div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.loading-div img{
+  width: 75px;
+}
+
+
+.discussion-loading-img {
+  width: 20px;
+}
+
+.reddit-a {
+  display: none;
+}
+
+.spoiler {
+  display: none;
+}
+
+
+#trailer{
+    width: 80vw;
+    height: 45vw;
+    max-height: 675px;
+    max-width: 1200px;
+    padding: 10px;
+    /*
+    background-color: #6D458F;
+    box-shadow: 1px 1px 5px;
+    */
+    margin: 10px;
+    margin-bottom: 50px;
+    display:none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+#close{
+    text-align: right;
+    display: block;
+    position: relative;
+}
+.trailer-iframe-div{
+    margin-bottom: 150px;
+    height: 45vw;
+    max-height: 675px;
+}
+
+
+
+.pulsate {
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+
+
+.hidden-scrollbar::-webkit-scrollbar{
+    width: 0 !important;
+}
+
+.trailer-iframe{
+  width: 100%;
+  height: 100%;
+}
