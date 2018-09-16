@@ -1,0 +1,32 @@
+/*
+  Copy the line below and place it in only one selector at a time to see the result.
+  
+  color: red;
+  */
+  
+  /* Select all elements. */
+* {
+  /*color: red; */
+}
+  
+  /* Select all article and p elements. */
+article, p {
+  /*color: red; */
+}
+  
+  /* Selects all <p> elements inside <article> elements. */
+article p{
+  /*color: red; */
+}  
+  /* Selects all <p> elements where the parent is a <article> element. */
+article>p {
+  /*color: red; */
+}
+  /* Selects all <p> elements that are placed immediately after <article> elements. */
+article + p{
+  /*color: red; */
+}
+  /* Selects every <p> element that is preceded by a <h2> element. */
+h2 ~ p {
+  /*color: red; */
+}

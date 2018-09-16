@@ -1,0 +1,52 @@
+.blur {
+  background-color: white;
+  color: rgba(0, 0, 0, 1);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 1),
+    0 0 4px rgba(0, 0, 0, 1),
+    0 0 8px rgba(0, 0, 0, 1);
+}
+.letterpress {
+  background-color: #A34747;
+  color: #522424;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3),
+    0 -1px 1px rgba(0, 0, 0, 0.3);
+}
+.emboss {
+  background-color: #ccc;
+  color: #ccc;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.75),
+    1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+.neon {
+  background-color: #000;
+  color: #fff;
+  text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #ff2d95,
+    0 0 30px #ff2d95,
+    0 0 40px #ff2d95,
+    0 0 50px #ff2d95,
+    0 0 75px #ff2d95;
+  letter-spacing: 5px;
+}
+.fire {
+  background-color: #333;
+  color: #fff;
+  text-shadow: 0 -1px 4px white,
+    0 -1px 10px yellow,
+    0 -10px 20px orange,
+    0 -18px 40px red;
+}
+.threedim {
+  background-color: #ccc;
+  color: #fff;
+  text-shadow: 0 1px 0 #999,
+    0 2px 0 #888,
+    0 3px 0 #777,
+    0 4px 0 #666,
+    0 5px 0 #555,
+    0 6px 0 #444,
+    0 7px 0 #333,
+    0 8px 0 #001135;
+}

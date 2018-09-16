@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Practice with Forms</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <script type="text/javascript">
+        function summarize() {
+          var str = "SID: " + document.getElementById("sid").value.trim() + "<br />" +
+              document.getElementById("firstname").value.trim() + " " +
+              document.getElementById("lastname").value.trim() + "<br />" +
+              document.getElementById("address1").value.trim() + "<br />";
+          var field = document.getElementById("address2").value;
+          if (field != null && field.trim() != "") {
+              str += field + "<br />";
+          }
+          str += document.getElementById("city").value.trim() + ", " +
+              document.getElementById("state").value.trim() + " " +
+              document.getElementById("zipcode").value.trim() + "<br />";
+          str += "Grade: ";
+          var radios = document.getElementsByName("grade_year");
+          for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+              str += radios[i].value + "<br />";
+              break;
+            }
+          }
+          str += "Devices: ";
+          var checkboxes = document.getElementsByName("devices[]");
+          var selected_devices = [];
+          for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+              selected_devices.push(checkboxes[i].value);
+            }
+          }
+          str += selected_devices + "<br />";
+          str += "Date enrolled: " + document.getElementById("date_enrolled").value + "<br />";
+          str += "Favorite Color: " + document.getElementById("favcolor").value + "<br />";
+          str += "Fun Facts: " + document.getElementById("fun_facts").value.trim();
+          document.getElementById("summary").innerHTML = str;
+          document.getElementById("summary_wrapper").style.display = "block";
+        }
+
+        function reset_form() {
+          document.getElementById("summary").innerHTML = "";
+          document.getElementById("summary_wrapper").style.display = "none";
+        }
+    </script>
+  </head>
+  <body>
+    <form name="form1" id="form1" autocomplete="off" method="get" onsubmit="summarize(); return false;">
+      <fieldset>
+        <legend>User Info</legend>
+        <label for="firstname" class="labelItem">First Name:</label>
+        <input type="text" name="firstname" id="firstname" size="50" maxlength="32" placeholder="Enter First Name." required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="First name cannot be blank." /><br />
+        <label for="lastname" class="labelItem">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" size="24" maxlength="32" placeholder="Enter Last Name. " required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="Last name cannot be blank." /><br />
+        <div class="labelItem"><label for="address1">Address:</label></div>
+        <div class="inputItem">
+          <input type="text" name="address1" id="address1" size="24" maxlength="32" placeholder="Enter Street Address." required pattern=".+" title="Address cannot be blank." /><br />
+          <input type="text" name="address2" id="address2" size="24" maxlength="32" /> <br />
+        </div><br />
+        <label for="city" class="labelItem">City:</label>
+        <input type="text" name="city" id="city" size="24" maxlength="32" placeholder="Enter City." required /><br />
+        <label for="state" class="labelItem">State:</label>
+        <select name="state" id="state" required>
+          <option value="" selected disabled>Choose State.</option>
+          <optgroup label="MidAtlantic Region">
+            <option value="Delaware">Delaware</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New York">New York</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+          </optgroup>
+          <optgroup label="New England Region">
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Maine">Maine</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="Connecticut">Connecticut</option>
+          </optgroup>
+          <optgroup label="West Coast Region">
+            <option value="California">California</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Nevada">Nevada</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Washington">Washington</option>
+          </optgroup>
+          <optgroup label="Midwest Region">
+            <option value="Illinois">Illinois</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Kansas">Kansas</option>
+          </optgroup>
+        </select><br />
+        <label for="zipcode" class="labelItem">Zipcode:</label>
+        <input type="text" name="zipcode" id="zipcode" size="24" maxlength="10" placeholder="Enter Zip Code." required pattern="\d{5}(\-\d{4})?" title="XXXXX or XXXXX-XXXX" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Student Info</legend>
+        <label for="sid" class="labelItem">SID:</label>
+        <input type="text" name="sid" id="sid" size="24" maxlength="8" placeholder="Enter Student ID." required /><br />
+        <label for="password" class="labelItem">Password:</label>
+        <div class="inputItem">
+          <input type="password" name="password" id="password" placeholder="Enter Password." required pattern=".{8,}" /><br />
+          <p class="info">Password must be at least 8 characters.</p>
+        </div><br /><br />
+        <div class="labelItem">Year:</div>
+        <div class="inputItem">
+          <input type="radio" name="grade_year" id="freshman" value="freshman" checked />
+          <label for="freshman">Freshman</label><br />
+          <input type="radio" name="grade_year" id="sophomore" value="sophomore" />
+          <label for="freshman">Sophomore</label><br />
+          <input type="radio" name="grade_year" id="junior" value="junior" />
+          <label for="freshman">Junior</label><br />
+          <input type="radio" name="grade_year" id="senior" value="senior" />
+          <label for="freshman">Senior</label><br />
+        </div><br /><br />
+        <div class="labelItem">Devices:</div>
+        <div class="inputItem">
+          <input type="checkbox" name="devices[]" id="laptop" value="laptop" />
+          <label for="laptop">Laptop</label><br />
+          <input type="checkbox" name="devices[]" id="desktop" value="desktop" />
+          <label for="laptop">Desktop</label><br />
+          <input type="checkbox" name="devices[]" id="tablet" value="tablet" />
+          <label for="laptop">Tablet</label><br />
+        </div><br />
+        <label for="date_enrolled" class="labelItem">Date Enrolled:</label>
+        <input type="date" name="date_enrolled" id="date_enrolled" /><br />
+        <label for="favcolor" class="labelItem">Favorite Color:</label>
+        <input type="color" name="favcolor" id="favcolor" /><br />
+        <label for="fun_facts" class="labelItem">Fun Facts:</label>
+        <textarea name="fun_facts" id="fun_facts" rows="10" cols="20" placeholder="Write some fun facts about yourself."></textarea><br />
+      </fieldset>
+      <section id="reset_submit">
+        <input type="reset" value="Reset" onclick="reset_form()" />
+        <input type="submit" value="Submit" />
+      </section><br />
+      <div id="summary_wrapper">
+        <fieldset>
+          <legend>Summary</legend>
+          <section id="summary"></section>
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>

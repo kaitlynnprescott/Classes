@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oxygen', sans-serif;
+}
+body {
+  background: linear-gradient(darkblue, lightblue) fixed;
+}
+#wrapper {
+  border: 1px, solid black;
+  background: white;
+  width: 75%;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+body header>nav, body footer>nav {
+  clear: both;
+  background: linear-gradient(gray, black);
+  /* TRBL */
+  padding: 3px 0;
+  width: 100%;
+  display: table;
+}
+body header>nav {
+  margin-bottom: 10px;
+}
+body header ul, body footer ul {
+  list-style: none;
+  display: table-row;
+  padding: 0;
+}
+body header li, body footer li {
+  color: white;
+  margin: 0 30px;
+  text-align: center;
+  display: table-cell;
+}
+img.sectionheader {
+  max-width: 100%;
+  max-height: 100%;
+}
+.maincontent{
+  width: 75%;
+}
+.maincontent h1 {
+  padding-top: 5px;
+}
+.maincontent p {
+  padding: 10px 0;
+  text-align: justify;
+}
+aside {
+  margin-top: 10px;
+  float: right;
+  padding-left: 5px;
+  width: calc(25% - 5px);
+}
+aside h2 {
+  font-size: 1.5em;
+}
+aside ul {
+  list-style: none;
+  background: linear-gradient(white, gray);
+}
+aside li {
+  padding: 10px;
+}
+.spotlight h2 {
+  padding: 15px 0 5px 0;
+}
+.spotlight article {
+  width: calc(33.33% - 5px);
+  margin-right: 5px;
+  display: inline; 
+  float: left;
+}
+.spotlight article>p {
+  padding-bottom: 10px;
+}
+.spotlight>article h3 {
+  padding-top: 10px;
+  font-size: 1em;
+}
+.spotlight footer>p{
+  text-align: right;
+}
+hr {
+  border: 1px solid gray;
+}
+aside a:link {
+  color: darkblue;
+  text-decoration: none;
+}
+aside a:visited {
+  color: aquamarine;
+}
+aside a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+aside a:active {
+  color: purple;
+}

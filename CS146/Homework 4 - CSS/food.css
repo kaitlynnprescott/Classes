@@ -1,0 +1,112 @@
+/**********************************************
+ * Name: Katie Prescott
+ * Date: 11-3-15
+ * Pledge: I pledge my honor that I have abided by the Stevens honor system.
+ * Assignment: CSS Homework
+ *********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Georgia', sans-serif;
+  font-size: 1em;
+}
+body {
+  background-color: dimgray;
+}
+#wrapper {
+  width: 75%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+  max-width: 1024px;
+  min-width: 360px;
+}
+/* Place header styles here. */
+body header h1 {
+  font-size: 2.5em;
+}
+body header p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+body header>nav {
+  background-color: black;
+  padding: 3px 0;
+  margin-bottom: 10px;
+  display: table;
+  width: 100%;
+}
+body header ul {
+  list-style: none;
+  display: table-row;
+}
+body header li {
+  text-align: center;
+  display: table-cell;
+  min-width: 16.67%;
+  padding: 0 3px;
+}
+/* @media for pad thai fix*/
+/* End header styles here. */
+#upper img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+#upper figcaption {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.25em;
+  margin-bottom: 5px;
+}
+#content {
+  -webkit-columns: 250px 3;
+  -moz-columns: 250px 3; 
+  -ms-columns: 250px 3;
+  -o-columns: 250px 3;
+  columns: 250px 3;
+  
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  -ms-column-gap: 20px;
+  -o-column-gap: 20px;
+  column-gap: 20px;
+  
+  -webkit-column-rule: thin gray solid;
+  -moz-column-rule: thin gray solid;
+  -ms-column-rule: thin gray solid;
+  -o-column-rule: thin gray solid;
+  column-rule: thin gray solid;
+}
+#content p {
+  text-indent: 20px;
+  text-align: justify;
+  padding-bottom: 5px;
+}
+/* Place anchor styles here. */
+body header nav a:link {
+  color: white;
+  text-decoration: none;
+}
+body header nav a:visited {
+  color: white;
+}
+body header nav a:hover {
+  color: yellow;
+}
+body header nav a:active {
+  color: bisque; 
+}
+/* End anchor styles here. */
+@media print {
+  #wrapper {
+    width: 90%;
+    margin: 10px auto;
+    background: white;
+    padding: 10px;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Playing with JavaScript</title>
+    <meta charset="utf-8" />
+    <script src="play.js"></script>
+  </head>
+  <body onload="start_here(); logToPage('Hello, JavaScript!')" >
+    <form id="mainform" name="mainform" method="get"
+	onsubmit="logToPage('Hello, ' + document.forms[0].name.value + '!'); return false">
+      <input type="text" size="24" maxlength="32" id="name" nam="name" />
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+
+    </script>
+    <p>End of body</p>
+  </body>
+</html>

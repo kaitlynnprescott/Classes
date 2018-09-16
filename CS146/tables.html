@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Table Practice</title>
+  </head>
+  <body>
+    <p>Basic Table in Grid Format</p>
+    <table border="1">
+      <!-- Do not use the border attribute in HTML5. It is deprecated.
+       I am using it just for illustration until we learn CSS3. -->
+      <thead>
+        <tr>
+          <td>Student</td>
+          <td>Homework 1</td>
+          <td>Quiz 1</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>100</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>60</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Joe</td>
+          <td>80</td>
+          <td>70</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Average</td>
+          <td>80</td>
+          <td>80</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <p>Table Using Rowspan and Colspan</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Student</td>
+          <td colspan="2">Nonsense</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Mark</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>110</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>78</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>N/A</td>
+          <td>50</td>
+          <td>63</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

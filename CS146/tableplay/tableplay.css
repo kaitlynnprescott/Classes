@@ -1,0 +1,33 @@
+body {
+  background-color: lightgray;
+  font-family: Corbel, sans-serif;
+}
+table {
+  width: 33%;
+  border-collapse: separate;
+  border-spacing: 3px;
+  margin: 40px auto;
+}
+table caption {
+  font: normal 3em 'TitleCopy', Corbel, Helvetica, Arial, sans-serif;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6), 0px 3px 3px rgba(0, 0, 0, 0.6);
+}
+thead {
+  font-variant: small-caps;
+  font-size: 1.2em;
+  text-shadow: 0px 1px 1px;
+  white-space: nowrap;
+}
+th {
+  text-align: left;
+}
+tr {
+  font-size: 1.0em;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: #A8F;
+}
+td {
+  padding: 0.5em;
+  border: 1px solid #999;
+}

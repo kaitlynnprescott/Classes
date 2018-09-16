@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Form Page</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="form.css" />
+  </head>
+  <body>
+      <header>
+      <a href="./assassins.html"><img src="assassins-logo.jpg" alt="logo" width="200" /></a>
+      <nav>
+        <ul>
+          <li><a href="assassins_welcome.html" >Welcome to Assassins</a></li>
+          <li><a href="assassins_form.html" >Find your Assassin</a></li>
+          <li><a href="assassins_about.html" >Meet Our Assassins</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form name="customer information" id="form1" autocomplete="off" method="get" onsubmit="summarize(); return false;">
+        <fieldset>
+            <legend id="legend">Your Information:</legend>
+            <label for="firstname" class="labelitem">First name:</label>
+            <input type="text" name="firstname" id="firstname" size="24" maxlength="32"
+               placeholder="Enter first name." required pattern="[a-zA-Z][a-zA-Z'\- ]*"
+               title="Please enter your first name" /><br />
+            <label for="lastname" class="labelitem">Last name:</label>
+            <input type="text" name="lastname" id="lastname" size="24" maxlength="32"
+               placeholder="Enter last name." required pattern="[a-zA-Z][a-zA-Z'\- ]*"
+               title="Please enter your last name" /><br />
+            <div class="labelitem"><label for="phonenumer">Phone Number:</label></div>
+            <div class="inputitem">
+            <input type="tel" name="phonenumber" id="phonenumber" size="24" minlength="10" maxlength="32"
+                 placeholder="Enter phone number." required pattern="\d{10}"
+                   title="+()(***)***-****." /><br /></div><br>
+            <div class="labelitem"><label for="address1">Address:</label></div>
+          <div class="inputitem">
+            <input type="text" name="address1" id="address1" size="24" maxlength="32" placeholder="Enter Street Address." required pattern=".+" title="Address cannot be blank." /><br />
+          <input type="text" name="address2" id="address2" size="24" maxlength="32" /> <br />
+          </div><br />
+            <label for="city" class="labelitem">City:</label>
+            <input type="text" name="city" id="city" size="24" maxlength="32" required /><br />
+            <label for="state" class="labelitem">State:</label>
+            <select name="state" id="state" required>
+            <option value="" selected disabled>Choose a state</option>
+            <optgroup label="Mid-Atlantic">
+                <option value="Delaware">Delaware</option>
+                <option value="Washington, D.C.">Washington, D.C.</option>
+                <option value="Maryland">Maryland</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New York">New York</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Virginia">Virginia</option>
+                <option value="West Virginia">West Virginia</option>
+            </optgroup>
+            <optgroup label="New England">
+                <option value="Connecticut">Connecticut</option>
+                <option value="Maine">Maine</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="Vermont">Vermont</option>
+            </optgroup>
+            </select><br />
+            <label for="zipcode" class="labelitem">Zip code:</label>
+            <input type="text" name="zipcode" id="zipcode" size="24" maxlength="10" required pattern="\d{5}(\-\d{4})?"
+               title="xxxxx or xxxxx-xxxx" /><br />
+          <br/>
+  <tr> 
+    <label for="CCNumber" class="labelitem">Credit Card Number:</label>
+    <td colspan="2" align="left"><input name="CCNo" type="text" value="" size="19" maxlength="40"></td>
+  </tr><br>
+  <tr> 
+   <label for="CCExpirationDate" class="labelitem">Expiration Date:</label>
+    <td colspan="2" align="left">
+      <SELECT NAME="CCExpiresMonth" >
+        <OPTION VALUE="" SELECTED>--Month--
+        <OPTION VALUE="01">January (01)
+        <OPTION VALUE="02">February (02)
+        <OPTION VALUE="03">March (03)
+        <OPTION VALUE="04">April (04)
+        <OPTION VALUE="05">May (05)
+        <OPTION VALUE="06">June (06)
+        <OPTION VALUE="07">July (07)
+        <OPTION VALUE="08">August (08)
+        <OPTION VALUE="09">September (09)
+        <OPTION VALUE="10">October (10)
+        <OPTION VALUE="11">November (11)
+        <OPTION VALUE="12">December (12)
+      </SELECT> 
+      <SELECT NAME="CCExpiresYear">
+        <OPTION VALUE="" SELECTED>--Year--
+        <OPTION VALUE="15">2015
+        <OPTION VALUE="16">2016
+        <OPTION VALUE="17">2017
+        <OPTION VALUE="18">2018
+        <OPTION VALUE="19">2019
+        <OPTION VALUE="20">2020
+        <OPTION VALUE="21">2021
+        <OPTION VALUE="22">2022
+        <OPTION VALUE="23">2023
+        <OPTION VALUE="24">2024
+        <OPTION VALUE="25">2025
+        <OPTION VALUE="26">2026
+      </SELECT>
+    </td>
+  </tr><br>
+  <tr> 
+    <td height="22" colspan="3" align="left" valign="middle">&nbsp;</td>
+  </tr>
+  
+  
+    
+</table>
+            
+            </div><br />
+            <br/>
+        </fieldset>
+        <br/>
+        <section id="reset_submit">
+            <input type="reset" value="Reset" onclick="reset_form()" />
+            
+            <input type="submit" value="Submit" />
+            <input type="button" value="Next" onclick="location.href ='form2.html' " /><br/>
+
+        </section><br />
+            <p class="info3">Submit before you click on Next, or you will lose everything you type in.</p>
+        <div id="summary_wrapper">
+            <fieldset>
+            <legend>Summary</legend>
+            <section id="summary"></section>
+            </fieldset>
+        </div>
+      </form>
+  </body>
+</html>

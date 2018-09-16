@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Form Page</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <script src="assassins.css"></script>
+  </head>
+  <body>
+    <header>
+      <a href="./assassins.html"><img src="assassins-logo.jpg" alt="logo" width="200" /></a>
+      <nav>
+        <ul>
+          <li><a href="assassins_welcome.html" >Welcome to CareTakers</a></li>  
+          <li><a href="Aform.html" >Find your CareTaker</a></li>
+          <li><a href="assassins_about.html" >Meet Our Staff</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form name="customer requirements" id="form2" autocomplete="off" method="get" onsubmit="summarize(); return false;">    
+      <fieldset>
+        <legend id="legend">Your Requirements:</legend>
+          <label for="target" class="labelitem">Target Full Name:</label>
+          <input type="text" name="target" id="target" size="24" maxlength="32" required /><br />
+        <div class="labelitem">Date of Birth:</div>
+        <input type="date" name="dateofbirth" id="dateofbirth" required /><br/>
+        <label for="sex" class="labelitem">Sex:</label><br />
+        <div class="inputitem">
+          <input type="radio" name="sex" id="male" value="Male" checked />
+          <label for="male">Male</label><br/>
+          <input type="radio" name="sex" id="female" value="Female" />
+          <label for="female">Female</label><br />
+        </div><br /><br />
+        <div class="labelitem"><label for="address1">Address:</label></div>
+          <div class="inputitem">
+            <input type="text" name="address1" id="address1" size="24" maxlength="32" placeholder="Enter Street Address." required pattern=".+" title="Address cannot be blank." /><br />
+            <input type="text" name="address2" id="address2" size="24" maxlength="32" /><br />
+          </div><br />
+          <label for="Country" class="labelitem">Country:</label>
+          <select name="Country" id="Country" required>
+            <option value="" selected disabled>Choose a Country</option>
+              <option value="United States">United States</option>
+              <option value="Mexico">Mexico</option>
+              <option value="China">China</option>
+              <option value="Russia">Russia</option>
+          </select><br />  
+          <label for="state" class="labelitem">State:</label>
+          <select name="state" id="state" required>
+            <option value="" selected disabled>Choose a state</option>
+            <optgroup label="United States">
+              <option value="" selected disabled>Choose a state</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Verginia</option>
+              <option value="Washington">Washington</option>
+              <option value="Washington, D.C.">Washington, D.C.</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </optgroup>
+            <optgroup label="Mexico">
+              <option value="Mexico City">Mexico City</option>
+              <option value="Cabo San Lucas">Cabo San Lucas</option>
+              <option value="Guadalajara">Guadalajara</option>
+              <option value="Tijuana">Tijuana</option>
+            </optgroup>
+            <optgroup label="China">
+              <option value="Beijing">Beijing</option>
+              <option value="Shanghi">Shanghi</option>
+              <option value="Hong Kong">Hong Kong</option>
+            </optgroup>
+            <optgroup label="Russia">
+              <option value="Moscow">Moscow</option>
+              <option value=Kremlin>Kremlin</option>
+              <option value="Saint Petersburg">Saint Petersburg</option>
+            </optgroup>
+          </select><br />
+          <label for="city" class="labelitem">City:</label>
+          <input type="text" name="city" id="city" size="24" maxlength="32" required /><br />
+          <label for="zipcode" class="labelitem">Zip code:</label>
+          <input type="text" name="zipcode" id="zipcode" size="24" maxlength="10" required pattern="\d{5}(\-\d{4})?"
+             title="xxxxx or xxxxx-xxxx" /><br />
+          <p class="info1">Enter 00000 If Not in the United States</p><br/>
+          <div class="labelitem">Jobs:<p class="info2">(Including previous jobs)</p></div>
+          <div class="inputitem">
+            <input type="checkbox" name="occupation[]" id="military" value="military" />
+            <label for="military">Military</label><br />
+            <input type="checkbox" name="occupation[]" id="professor" value="professor" />
+            <label for="professor">Professor</label><br />
+            <input type="checkbox" name="occupation[]" id="president" value="president" />
+            <label for="president">President</label><br />
+            <input type="checkbox" name="occupation[]" id="tycoon" value="tycoon" />
+            <label for="tycoon">Tycoon</label><br />
+            <input type="checkbox" name="occupation[]" id="other" value="other" />
+            <label for="other">Other</label><br />
+            <input for="other" size="24" placeholder="If you check other, name them"/><br/>
+          </div><br />
+          <label for="specialhints" class="labelitem">Special hints:</label>
+          <textarea name="specialhints" id="specialhints" rows="10" cols="20" placeholder="Tell us something special about him/her."></textarea><br />
+      <br />
+      </fieldset><br />
+      <section id="reset_submit">
+        <input type="reset" value="Reset" onclick="reset_form()" />
+        <input type="submit" value="Submit" />
+        <input type="button" value="Next" onclick="location.href ='form3.html' " /><br/>
+      </section><br />
+      <p class="info3">Submit before you click on Next, or you will lose everything you type in.</p>
+      <div id="summary_wrapper">
+        <fieldset>
+        <legend>Summary</legend>
+        <section id="summary"></section>
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>

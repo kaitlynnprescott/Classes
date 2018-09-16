@@ -1,0 +1,17 @@
+table {
+  width: 60%;
+  border-spacing: 6px;
+  margin: 40px auto;
+}
+th {
+  font: normal 4em 'TitleCopy', Corbel, Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  border: 1px solid brown;
+  background-color: tan;
+}
+td {
+  font: normal 2.5em Helvetica, Arial, sans-serif;
+  border: 1px solid brown;
+  background-color: white;
+  padding: 4px;
+}
