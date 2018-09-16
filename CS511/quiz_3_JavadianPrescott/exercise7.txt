@@ -1,0 +1,45 @@
+Catherine Javadian and Katie Prescott
+We pledge our honor that we have abided by the Stevens Honor System
+
+Exercise 7
+
+a)
+
+Semaphore x = new Semaphore(1);
+
+thread {
+	while(true) {
+		x.acquire();
+		x.acquire();
+		print("A");
+		x.release();
+	}
+}
+
+thread {
+	while(true) {
+		print("B");
+		x.release();
+	}
+}
+
+b)
+
+Semaphore x = new Semaphore(1);
+Semaphore y = new Semaphore(0);
+
+thread {
+	while(true) {
+		x.acquire();
+		print("A");
+		y.release();
+	}
+}
+
+thread {
+	while(true) {
+		y.acquire();
+		print("B");
+		x.release();
+	}
+}

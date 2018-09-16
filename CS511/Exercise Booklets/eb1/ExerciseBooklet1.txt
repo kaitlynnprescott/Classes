@@ -1,0 +1,37 @@
+Exercise Booklet 1
+
+1. Assume that the print command is atomic. Show all possible traces of execution of the following program.
+	thread P: {							thread Q: {
+	print ("Hi");						print ("Hi");
+	print ("Alice");					print ("Bob");
+	}									}
+
+	Hi Hi Alice Bob
+	Hi Hi Bob Alice
+	Hi Alice Hi Bob
+
+2. Draw the state diagram for the following programs. What values can x take at the end of the execution?
+  a.
+	1. global int x = 0;
+	2. thread P: {							2. thread Q: {
+	3.  	int local = x;					3.  	int local = x;
+	4.  	local = local + 1;				4.  	local = local + 1;
+	5.  	x = local;						5.  	x = local;
+	6. }  									6. }
+										|
+										∨
+								(P3, Q3, x = 0)
+										/\
+									   /  \
+									  /	   \
+									 /		\
+				(P4, Q3, 0, localP = 0)		 ----------------------------------(P3, Q4, 0, localQ = 0)
+					/\																	   	  	/\
+				   /  \																		   /  \
+				  /	   \																	  /	   \
+				 /		\														 	 	   	 /	    \
+	(P5, Q3, 0, 1)		 ------------(P4, Q4, 0, 0, localQ = 0)			(P4, Q4, 0, 0, localP = 0)   ------------------(P3, Q5, 0, 1)
+			/\										/\										/\										/\
+	   	   /  \									   /  \									   /  \									   /  \
+	  	  /	   \								  /	   \								  /	   \								  /    \
+(-, Q3, 1, 1)	(P5, Q4, 0, 1, 0)	(P5, Q4, 0, 1, 0)  (P4, Q5, 0, 0, 1)	(P5, Q4, 0, 0, 1)  (P4, Q5, 0, 1, 0)   (P4, Q5, 0, 1, 0)   (P3, -, 1, 1)
