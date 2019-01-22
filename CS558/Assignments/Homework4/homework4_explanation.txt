@@ -1,0 +1,37 @@
+Problem 1:
+The accuracy with 8 bins: 0.5
+The accuracy with 10 bins: 0.583333333333
+The accuracy with 12 bins: 0.5
+The accuracy with 15 bins: 0.5
+The accuracy with 50 bins: 0.666666666667
+The accuracy with 100 bins: 0.75
+The accuracy with 125 bins: 0.666666666667
+The accuracy with 150 bins: 0.75
+The accuracy with 175 bins: 0.75
+The accuracy with 200 bins: 0.75
+The accuracy with 250 bins: 0.666666666667
+The accuracy with 300 bins: 0.75
+The accuracy with 400 bins: 0.666666666667
+The accuracy with 500 bins: 0.666666666667
+
+It seems there is only so much that my classifier is able to improve by. I don't think that this classifier will be able to get any more accurate than 75%. 
+
+Output at 100 bins:
+Test image 01 of class 1 has been assigned to class 1
+Test image 02 of class 1 has been assigned to class 1
+Test image 03 of class 1 has been assigned to class 1
+Test image 04 of class 1 has been assigned to class 1
+Test image 05 of class 2 has been assigned to class 2
+Test image 06 of class 2 has been assigned to class 1
+Test image 07 of class 2 has been assigned to class 3
+Test image 08 of class 2 has been assigned to class 2
+Test image 09 of class 3 has been assigned to class 3
+Test image 10 of class 3 has been assigned to class 3
+Test image 11 of class 3 has been assigned to class 3
+Test image 12 of class 3 has been assigned to class 2
+
+Problem 2:
+My solution works by checking each pixel, and compare the RGB values to pure red, pure green, and pure blue. As sky is blue, if the most likely base color is blue, it will change the color to pure red. 
+This fails in some areas because the color of some pixels not part of the sky can have a base color of blue, such as test picture 2, a picture of a street. The road is seen as blue, and is therefore changed to red. 
+There are also other areas of the pictures whose pixels are more similar to blue, like some pixels in grass or shadows. 
+To make it more accurate, I could train it to recoginze shadows and grass based on the shades of the blue recognized. 
