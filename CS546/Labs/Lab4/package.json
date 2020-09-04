@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
-    "mongodb": "^2.2.24",
+    "mongodb": "^3.6.1",
     "uuid": "^3.0.1"
   },
   "devDependencies": {},
